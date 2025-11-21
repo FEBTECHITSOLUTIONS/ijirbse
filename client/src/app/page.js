@@ -5,20 +5,6 @@ import lottieChemistry from "../../public/animations/RedNetworkGlobe.json";
 import Lottie from 'lottie-react';
 import VerticalCarousel from '@/components/VerticalCarousel';
 
-const FloatingMolecule = ({ delay = 0, size = 60 }) => (
-  <div 
-    className="absolute rounded-full opacity-10"
-    style={{
-      width: `${size}px`,
-      height: `${size}px`,
-      background: 'linear-linear(135deg, #667eea 0%, #764ba2 100%)',
-      animation: `float ${6 + delay}s ease-in-out infinite`,
-      animationDelay: `${delay}s`,
-      left: `${Math.random() * 100}%`,
-      top: `${Math.random() * 100}%`,
-    }}
-  />
-);
 
 const StatsCounter = ({ end, label, icon: Icon }) => {
   const [count, setCount] = useState(0);
@@ -61,11 +47,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen  relative ">
       
 
-      {/* Floating background elements */}
-      <FloatingMolecule delay={0} size={80} />
-      <FloatingMolecule delay={2} size={60} />
-      <FloatingMolecule delay={4} size={100} />
-      <FloatingMolecule delay={1} size={70} />
+    
       
       <main className="grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 overflow-x-hidden">
         {/* Hero Section */}
