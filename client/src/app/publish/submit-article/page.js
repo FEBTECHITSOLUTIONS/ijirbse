@@ -90,11 +90,11 @@ export default function SubmitArticle() {
       <Toaster />
       <main className="grow flex justify-center items-center py-12 px-4">
         <div className="w-full max-w-3xl border p-8 rounded-2xl shadow-lg">
-          <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-200">
+          <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900">
             Submit Your Research Article
           </h1>
 
-          <p className="text-gray-100 text-center mb-8">
+          <p className="text-gray-700 text-center mb-8">
             Authors are invited to submit original manuscripts directly through this platform.
             Please ensure your article follows the{" "}
             <a
@@ -108,7 +108,7 @@ export default function SubmitArticle() {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">
+              <label className="block mb-1 font-semibold text-gray-700">
                 Author Name <span className="text-red-500">*</span>
               </label>
               <input
@@ -124,7 +124,7 @@ export default function SubmitArticle() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">
+              <label className="block mb-1 font-semibold text-gray-700">
                 Affiliation <span className="text-red-500">*</span>
               </label>
               <input
@@ -140,7 +140,7 @@ export default function SubmitArticle() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">
+              <label className="block mb-1 font-semibold text-gray-700">
                 Email <span className="text-red-500">*</span>
               </label>
               <input
@@ -156,7 +156,7 @@ export default function SubmitArticle() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">
+              <label className="block mb-1 font-semibold text-gray-700">
                 Article Title <span className="text-red-500">*</span>
               </label>
               <input
@@ -172,7 +172,7 @@ export default function SubmitArticle() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">
+              <label className="block mb-1 font-semibold text-gray-700">
                 Upload Manuscript <span className="text-red-500">*</span>
               </label>
               <input
@@ -184,7 +184,7 @@ export default function SubmitArticle() {
                 ref={fileInputRef}
                 disabled={isSubmitting}
               />
-              <p className="text-sm text-gray-100 mt-1">
+              <p className="text-sm text-gray-600 mt-1">
                 Accepted formats: <strong>.docx</strong> or <strong>.pdf</strong> | Max size: 10MB
               </p>
               {formData.file && (
@@ -199,8 +199,8 @@ export default function SubmitArticle() {
                 className={`${
                   isSubmitting
                     ? "bg-blue-400 cursor-not-allowed"
-                    : "bg-linear-to-r  from-[#0782df] to-[#0b111d] hover:to-blue-600"
-                } text-white font-semibold px-8 py-2.5 rounded-lg shadow transition`}
+                    : "bg-[#1097ff] hover:to-blue-600 cursor-pointer"
+                } text-black font-semibold px-8 py-2.5 rounded-lg shadow transition`}
               >
                 {isSubmitting ? "Submitting..." : "Submit Article"}
               </button>

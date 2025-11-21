@@ -23,7 +23,7 @@ export default function Archives() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen text-gray-100 text-lg">
+      <div className="flex justify-center items-center h-screen text-gray-900 text-lg">
         Loading archived issues...
       </div>
     );
@@ -31,12 +31,12 @@ export default function Archives() {
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-6 text-gray-100">
+      <h1 className="text-3xl font-bold mb-6 text-gray-800">
         Archived Issues
       </h1>
 
       {archives.length === 0 ? (
-        <p className="text-gray-100 text-center">No archived issues found.</p>
+        <p className="text-gray-700 text-center">No archived issues found.</p>
       ) : (
         <div className=" space-y-3">
                {archives.map((issue, i) => {

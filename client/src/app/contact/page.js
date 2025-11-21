@@ -57,18 +57,18 @@ export default function Contact() {
     <div className="flex flex-col min-h-screen ">
       <main className="grow flex justify-center items-center py-12 px-4">
         <div className="w-full max-w-3xl border p-8 rounded-2xl shadow-lg">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-100">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center text-gray-900">
             Contact Us
           </h1>
 
-          <p className="mb-8 text-gray-200 text-center">
+          <p className="mb-8 text-gray-700 text-center">
             For inquiries related to submissions, editorial policies, or general questions,
             please contact us using the form below.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">Name</label>
+              <label className="block mb-1 font-semibold text-gray-900">Name</label>
               <input
                 type="text"
                 name="name"
@@ -81,7 +81,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">Email</label>
+              <label className="block mb-1 font-semibold text-gray-900">Email</label>
               <input
                 type="email"
                 name="email"
@@ -94,7 +94,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-gray-200">Message</label>
+              <label className="block mb-1 font-semibold text-gray-900">Message</label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -113,7 +113,7 @@ export default function Contact() {
                 className={`${
                   isSubmitting
                     ? "bg-blue-400 cursor-not-allowed"
-                    : "bg-linear-to-r  from-[#0782df] to-[#0b111d] hover:bg-blue-700 cursor-pointer"
+                    : "bg-[#0091ff] hover:bg-blue-700 cursor-pointer"
                 } text-white font-semibold px-8 py-2.5 rounded-lg transition`}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}

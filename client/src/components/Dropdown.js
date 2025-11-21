@@ -22,7 +22,7 @@ export default function Dropdown({ title, items }) {
     <div ref={dropdownRef} className="relative">
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="flex items-center gap-1 text-white hover:scale-105 transition-transform duration-100 ease-linear transform  focus:outline-none"
+        className="flex items-center gap-1 text-black hover:scale-105 transition-transform duration-100 ease-linear transform  focus:outline-none"
       >
         {title}
         <FiChevronDown
@@ -33,13 +33,13 @@ export default function Dropdown({ title, items }) {
       </button>
 
       {open && (
-        <div className="absolute mt-2 bg-linear-to-br from-[#0782df] to-[#0b111d] shadow-lg rounded-2xl border border-gray-100 w-52 z-50">
+        <div className="absolute mt-2 bg-white shadow-lg rounded-2xl border border-gray-100 w-52 z-50">
           {items.map((item) => (
             <Link
               key={item.name}
               href={item.link}
               onClick={() => setOpen(false)} // ✅ Close dropdown on selection
-              className="block px-4 py-2 text-white hover:bg-linear-to-r  from-blue-500/40 to-blue-500 rounded-2xl"
+              className="block px-4 py-2 text-black hover:text-white hover:bg-blue-500 rounded-2xl"
             >
               {item.name}
             </Link>

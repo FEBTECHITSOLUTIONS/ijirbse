@@ -31,7 +31,7 @@ export default function LatestIssues() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen text-gray-100">
+      <div className="flex justify-center items-center h-screen text-gray-800">
         Loading latest issue...
       </div>
     );
@@ -50,7 +50,7 @@ export default function LatestIssues() {
 
   return (
     <main className="max-w-5xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-6 text-gray-100 text-center">
+      <h1 className="text-3xl font-bold mb-6 text-gray-800 text-center">
         Latest Issue
       </h1>
 
@@ -59,7 +59,7 @@ export default function LatestIssues() {
         <p className="text-lg text-blue-500 font-semibold">
           Academic Year: {year}
         </p>
-        <p className="text-md text-gray-300">
+        <p className="text-md text-gray-700">
           Volume {volume} • Issue {issueNumber}
         </p>
       </div>
@@ -83,7 +83,7 @@ export default function LatestIssues() {
               </div>
 
               <div className=" w-full flex justify-between items-center gap-6">
-                <div className="text-sm text-gray-500 flex items-center gap-2">
+                <div className="text-sm text-gray-900 flex items-center gap-2">
                 <MdCategory /> latest Issue
               </div>
 

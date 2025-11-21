@@ -40,11 +40,11 @@ export default function GuideForAuthors() {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r  from-[#0782df] to-[#0b111d] text-white rounded-full text-sm font-medium shadow-lg mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow-lg mb-4">
                 <FiBookOpen className="w-4 h-4" />
                 Author Guidelines
               </div>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-3 bg-clip-text text-transparent bg-linear-to-r from-[#0782df] to-[#8399c5] ">
+              <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-blue-600 ">
                 Guide for Authors
               </h1>
               <div className="w-24 h-1 bg-linear-to-r  from-[#0782df] to-[#0b111d] mx-auto rounded-full "></div>

@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <div className="sticky top-5  max-w-7xl flex justify-center items-center z-50 ">
-      <nav className="backdrop-blur-xl bg-black/10  shadow-md w-[90vw]  rounded-full">
+      <nav className="backdrop-blur-xl bg-[#245696]/10  shadow-md w-[90vw]  rounded-full">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-1">
           {/* Brand / Logo */}
           <Link
@@ -36,7 +36,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8 font-medium">
+          <div className="hidden md:flex items-center gap-8 font-medium text-black">
             <Dropdown title="About the Journal" items={aboutItems} />
             <Dropdown title="Publish" items={publishItems} />
             <Dropdown title="Articles & Issues" items={articlesItems} />
@@ -56,7 +56,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-2xl text-gray-100 hover:text-[#001BB7] transition"
+            className="md:hidden text-2xl text-gray-900 hover:text-[#001BB7] transition"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
           >
@@ -72,7 +72,7 @@ export default function Navbar() {
             menuOpen ? "-translate-x-5" : "translate-x-[60vw]"
           } md:hidden fixed top-20 right-0 w-[60vw]  bg-linear-to-br from-[#0782df] to-[#0b111d] rounded-2xl  transition-transform duration-300 ease-in-out transform`}
         >
-          <div className="flex flex-col space-y-4 py-6 px-4  rounded-2xl z-50 h-full backdrop-blur-3xl text-white">
+          <div className="flex flex-col space-y-4 py-6 px-4  rounded-2xl z-50 h-full backdrop-blur-3xl text-black">
             <Dropdown title="About the Journal" items={aboutItems} />
             <Dropdown title="Publish" items={publishItems} />
             <Dropdown title="Articles & Issues" items={articlesItems} />

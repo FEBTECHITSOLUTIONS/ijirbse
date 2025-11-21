@@ -23,12 +23,12 @@ export default function Indexing() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r  from-[#0782df] to-[#0b111d] text-white rounded-full text-sm font-medium shadow-lg mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow-lg mb-6">
             <FiDatabase className="w-4 h-4" />
             Journal Indexing
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-linear-to-r  from-[#0782df] to-[#5d84d3]">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-blue-600">
             Journal Indexing & Insight
           </h1>
 
@@ -99,7 +99,7 @@ export default function Indexing() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
-          className=" rounded-3xl shadow-2xl p-8 text-white border border-white/20"
+          className=" rounded-3xl shadow-2xl p-8 text-black border border-white/20"
         >
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 bg-linear-to-r  from-[#0782df] to-[#0b111d] rounded-xl flex items-center justify-center shadow-lg">
@@ -108,13 +108,13 @@ export default function Indexing() {
             <h2 className="text-3xl font-bold">Journal Insight</h2>
           </div>
 
-          <div className="space-y-5 text-blue-50">
+          <div className="space-y-5 text-gray-600">
             <p className="text-lg">
-              <strong className="text-white">ISSN No.:</strong> Under Process
+              <strong className="text-black">ISSN No.:</strong> Under Process
             </p>
 
             <p className="text-lg">
-              <strong className="text-white">Subject Areas:</strong> Chemistry,
+              <strong className="text-black">Subject Areas:</strong> Chemistry,
               Mathematics, Physics, Nanoscience, Statistics, Biochemistry,
               Biological Science, Natural Science, General Study Skills, Life
               Sciences, Earth Science, Material Science, Chemical Engineering,
@@ -127,22 +127,22 @@ export default function Indexing() {
 
             <div className="grid sm:grid-cols-2 gap-6 pt-3">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 flex items-center gap-3">
-                <FiAward className="w-6 h-6 text-white" />
+                <FiAward className="w-6 h-6 text-black" />
                 <div>
-                  <h3 className="font-semibold text-white text-lg">
+                  <h3 className="font-semibold text-black text-lg">
                     Article Publishing Options
                   </h3>
-                  <p className="text-blue-100">Open Access</p>
+                  <p className="text-gray-400">Open Access</p>
                 </div>
               </div>
 
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 flex items-center gap-3">
-                <FiClock className="w-6 h-6 text-white" />
+                <FiClock className="w-6 h-6 text-black" />
                 <div>
-                  <h3 className="font-semibold text-white text-lg">
+                  <h3 className="font-semibold text-black text-lg">
                     Publication Timeline
                   </h3>
-                  <p className="text-blue-100">30–90 Days</p>
+                  <p className="text-gray-400">30–90 Days</p>
                 </div>
               </div>
             </div>

@@ -69,11 +69,11 @@ export default function Aims() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r  from-[#0782df] to-[#0b111d] text-white rounded-full text-sm font-medium shadow-lg mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow-lg mb-6">
             <FiTarget className="w-4 h-4" />
             Our Mission & Scope
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-linear-to-r from-blue-600 via-[#0782df] to-[#0b111d]">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-blue-600">
             Aims & Scope
           </h1>
           <div className="w-24 h-1 bg-linear-to-r from-[#0782df] to-[#0b111d] mx-auto rounded-full"></div>
@@ -149,7 +149,7 @@ export default function Aims() {
 
         {/* Publishing Details Section */}
         <motion.section
-          className="border rounded-3xl shadow-2xl p-8 text-white"
+          className="border rounded-3xl shadow-2xl p-8 text-black"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -169,7 +169,7 @@ export default function Aims() {
                 </div>
                 <h3 className="font-semibold text-lg">Publishing Options</h3>
               </div>
-              <p className="text-white">Open Access</p>
+              <p className="text-black">Open Access</p>
             </div>
 
             {/* Publication Timeline */}
@@ -180,7 +180,7 @@ export default function Aims() {
                 </div>
                 <h3 className="font-semibold text-lg">Publication Timeline</h3>
               </div>
-              <p className="text-white">30–90 days</p>
+              <p className="text-black">30–90 days</p>
             </div>
 
             {/* Indexing */}
@@ -191,7 +191,7 @@ export default function Aims() {
                 </div>
                 <h3 className="font-semibold text-lg">Indexing</h3>
               </div>
-              <p className="text-white text-sm leading-relaxed">
+              <p className="text-black text-sm leading-relaxed">
                 Research Gate (Under process), Google Scholar (Under process), 
                 Chemical Abstract (Under process), Index Copernicus (Under process), Scopus (Under process)
               </p>

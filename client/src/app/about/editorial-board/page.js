@@ -92,12 +92,12 @@ export default function EditorialBoard() {
       }`}
     >
       <div className="flex items-start gap-5">
-        <div className="flex-shrink-0 w-14 h-14 bg-linear-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center shadow-inner">
+        <div className="flex-shrink-0 w-14 h-14  rounded-full flex items-center justify-center shadow-inner">
           <User className="w-7 h-7 text-blue-700" />
         </div>
         <div className="flex-1 min-w-0">
           <h3
-            className={`font-semibold text-gray-200 ${
+            className={`font-semibold text-gray-700 ${
               variant === "chief" ? "text-xl" : "text-lg"
             }`}
           >
@@ -107,21 +107,21 @@ export default function EditorialBoard() {
             <p
               className={`font-medium ${
                 variant === "chief"
-                  ? "text-blue-400"
-                  : "text-blue-300 text-sm mb-2"
+                  ? "text-blue-600"
+                  : "text-blue-500 text-sm mb-2"
               }`}
             >
               {editor.subRole}
             </p>
           )}
           {editor.backGround && (
-            <p className="text-gray-300 text-sm leading-relaxed mb-2">
+            <p className="text-gray-700 text-sm leading-relaxed mb-2">
               {editor.backGround}
             </p>
           )}
           {editor.address && (
-            <div className="flex items-start gap-2 mt-1 text-gray-300 text-sm">
-              <Building2 className="w-4 h-4 text-gray-500 mt-0.5" />
+            <div className="flex items-start gap-2 mt-1 text-gray-700 text-sm">
+              <Building2 className="w-4 h-4 text-gray-800 mt-0.5" />
               <p>{editor.address}</p>
             </div>
           )}
@@ -161,13 +161,13 @@ export default function EditorialBoard() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r  from-[#0782df] to-[#0b111d] text-white rounded-full text-sm font-medium shadow mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow mb-4">
             Editorial Excellence
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-gray-100">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-gray-900">
             Editorial Board
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
             Our editorial board is composed of globally recognized scholars and
             professionals who uphold the journal’s commitment to excellence,
             ethics, and innovation.
@@ -204,7 +204,7 @@ export default function EditorialBoard() {
                   onClick={() => setSelectedFilter(filter.value)}
                   className={`px-5 py-2.5 rounded-lg font-medium border transition-all ${
                     selectedFilter === filter.value
-                      ? "bg-linear-to-r  from-[#0782df] to-[#0b111d] text-white border-transparent shadow"
+                      ? "bg-[#0782df] text-white border-transparent shadow"
                       : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
                   }`}
                 >
@@ -219,7 +219,7 @@ export default function EditorialBoard() {
         {loading && (
           <div className="space-y-12">
             <div>
-              <h2 className="text-2xl font-bold text-gray-100 mb-6 border-b-2 border-blue-700 pb-2">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-700 pb-2">
                 Editor-in-Chief
               </h2>
               <div className="max-w-4xl">
@@ -228,7 +228,7 @@ export default function EditorialBoard() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-100 mb-6 border-b border-gray-300 pb-2">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b border-gray-300 pb-2">
                 Associate Editors
               </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -241,7 +241,7 @@ export default function EditorialBoard() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-100 mb-6 border-b border-gray-300 pb-2">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b border-gray-300 pb-2">
                 Editorial Board Members
               </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -267,7 +267,7 @@ export default function EditorialBoard() {
           <div className="space-y-16">
             {editorInChief && (
               <section>
-                <h2 className="text-2xl font-bold text-gray-100 mb-6 border-b-2 border-blue-700 pb-2">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-blue-700 pb-2">
                   Editor-in-Chief
                 </h2>
                 <div className="max-w-4xl">
@@ -278,7 +278,7 @@ export default function EditorialBoard() {
 
             {associateEditors.length > 0 && (
               <section>
-                <h2 className="text-2xl font-bold text-gray-100 mb-6 border-b border-gray-300 pb-2">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b border-gray-300 pb-2">
                   Associate Editors
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -291,7 +291,7 @@ export default function EditorialBoard() {
 
             {boardMembers.length > 0 && (
               <section>
-                <h2 className="text-2xl font-bold text-gray-100 mb-6 border-b border-gray-300 pb-2">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 border-b border-gray-300 pb-2">
                   Editorial Board Members
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

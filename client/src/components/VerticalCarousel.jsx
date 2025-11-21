@@ -55,7 +55,7 @@ export default function VerticalCarousel() {
         {repeatedScopes.map((scope, index) => (
           <div
             key={index}
-            className="text-center text-white font-medium text-lg py-3 px-4 rounded-lg  backdrop-blur-sm shadow-sm hover:bg-white/30 transition"
+            className="text-center text-black font-medium text-lg py-3 px-4 rounded-lg  backdrop-blur-sm shadow-sm hover:bg-white/30 transition"
           >
             {scope}
           </div>
