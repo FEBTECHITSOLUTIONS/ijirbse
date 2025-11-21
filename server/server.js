@@ -13,7 +13,7 @@ journalServer.use(express.json());
 journalServer.use(cookieParser())
 journalServer.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"], // multiple allowed frontends
+    origin: ["http://localhost:5173", "http://localhost:3000" , "https://ijirbse.com" , "https://admin.ijirbse.com"], // multiple allowed frontends
     credentials: true, // ✅ allows cookies & authorization headers
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],

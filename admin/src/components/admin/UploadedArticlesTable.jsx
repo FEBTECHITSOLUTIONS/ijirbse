@@ -67,7 +67,7 @@ const UploadedArticlesTable = ({ articles, loading, onStatusUpdated , handlePubl
                 <td className="p-3 flex items-center gap-2">
                   
                   <a
-                    href={`http://localhost:5000${article.uploadedManuscriptMetaData?.url}`}
+                    href={`https://api.ijirbse.com${article.uploadedManuscriptMetaData?.url}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline "
