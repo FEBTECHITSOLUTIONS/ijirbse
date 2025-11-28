@@ -45,14 +45,14 @@ export const uploadarticle = async (req, res) => {
       text:articleTitle,
        html: `
         <p>Dear <b>${authorName}</b>,</p>
-        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)</i>.</p>
+        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International journal of interdisciplinary Research in Sciences and Engineering (IJIRSE)</i>.</p>
         <p>Your submission has been received successfully and is currently under editorial review.</p>
         <p>We will notify you about the review outcome within 30–90 days.</p>
         <br/>
         <p>Best Regards,<br/>
         <b>Editorial Team</b><br/>
-        IJIRBSE Journal<br/>
-        <a href="http://ijirbse.org" target="_blank">www.ijirbse.org</a></p>
+        IJIRSE Journal<br/>
+        <a href="http://ijirbse.com" target="_blank">www.ijirbse.com</a></p>
       `,
     });
 
@@ -101,14 +101,14 @@ export const updateArticleStatus = async (req, res) => {
       text: articleTitle,
       html: `
         <p>Dear <b>${authorName}</b>,</p>
-        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)</i>.</p>
+        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International journal of interdisciplinary Research in Sciences and Engineering (IJIRSE)</i>.</p>
         <p>Your submission status has been updated to: <b>${status.replace("_", " ").toUpperCase()}</b>.</p>
         <p>We will keep you informed about further decisions.</p>
         <br/>
         <p>Best Regards,<br/>
         <b>Editorial Team</b><br/>
-        IJIRBSE Journal<br/>
-        <a href="http://ijirbse.org" target="_blank">www.ijirbse.org</a></p>
+        IJIRSE Journal<br/>
+        <a href="http://ijirbse.com" target="_blank">www.ijirbse.com</a></p>
       `,
     });
 
@@ -134,11 +134,11 @@ export const constactUs = async (req, res) => {
     }
 
     // Prepare email content
-    // const to = "editor@ijirbse.org"; 
+    // const to = "editor@ijirbse.com"; 
     const to = "contact@amarjha.dev"; 
     const mailSubject = `New Contact Message: ${subject}`;
     const text = `
-      New message from IJIRBSE Contact Form
+      New message from IJIRSE Contact Form
       
       Name: ${name}
       Email: ${email}
@@ -148,7 +148,7 @@ export const constactUs = async (req, res) => {
     `;
 
     const html = `
-      <h2>New Message from IJIRBSE Contact Form</h2>
+      <h2>New Message from IJIRSE Contact Form</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Subject:</strong> ${subject}</p>

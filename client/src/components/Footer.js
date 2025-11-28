@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Left Section */}
           <div>
             <h3 className="text-lg font-semibold text-blue-700">
-              International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)
+              International journal of interdisciplinary Research in Sciences and Engineering (IJIRSE)
             </h3>
             <p className="text-sm text-gray-600 mt-1">
               Advancing knowledge across Science and Engineering disciplines.
@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Right Section */}
           <div className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} IJIRBSE. All rights reserved.
+            &copy; {new Date().getFullYear()} IJIRSE. All rights reserved.
           </div>
         </div>
 

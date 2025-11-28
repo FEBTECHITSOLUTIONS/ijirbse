@@ -88,7 +88,7 @@ const Signin = () => {
         </form>
 
         <p className="text-center text-sm text-gray-500 mt-6">
-          © {new Date().getFullYear()} IJIRBSE — All rights reserved
+          © {new Date().getFullYear()} IJIRSE — All rights reserved
         </p>
       </div>
     </div>

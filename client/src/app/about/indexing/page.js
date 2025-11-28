@@ -46,7 +46,7 @@ export default function Indexing() {
           <p className="text-lg mb-6">
             The{" "}
             <strong className="text-blue-600">
-              International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)
+              International journal of interdisciplinary Research in Sciences and Engineering (IJIRSE)
             </strong>{" "}
             is committed to promoting high-quality research across multiple
             scientific disciplines. The journal follows a rigorous double-blind

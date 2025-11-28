@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "IJIRBSE Journal",
+  title: "IJIRSE Journal",
   description:
     "Official International journal of interdisciplinary Research in Sciences and Engineering",
 };

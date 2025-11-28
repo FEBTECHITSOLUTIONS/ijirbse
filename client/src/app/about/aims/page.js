@@ -89,7 +89,7 @@ export default function Aims() {
         >
           <div className="space-y-6 text-justify text-gray-700 leading-relaxed">
             <p className="text-lg">
-              The <strong className="text-blue-600">International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)</strong> 
+              The <strong className="text-blue-600">International journal of interdisciplinary Research in Sciences and Engineering (IJIRSE)</strong> 
               is devoted to the publication of high-quality original research articles, reviews, and short communications 
               that advance knowledge in Sciences, Engineering, and their interfaces.
             </p>

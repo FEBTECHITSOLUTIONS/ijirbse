@@ -62,7 +62,7 @@ export default function GuideForAuthors() {
                 Authors are invited to submit original research articles, review papers, and
                 short communications that align with the scope of the{" "}
                 <strong className="text-blue-600">
-                  International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)
+                  International journal of interdisciplinary Research in Sciences and Engineering (IJIRSE)
                 </strong>
                 . All manuscript must be written in clear, concise, and grammatically, accurate English, Submissions are required to fully comply with the journal’s guidelines.
               </p>
@@ -165,8 +165,8 @@ export default function GuideForAuthors() {
                   </div>
                   <p className=" text-gray-800">
                     Email your manuscript to{" "}
-                    <a href="mailto:editor@ijirbse.org" className="text-blue-600 underline hover:text-blue-800">
-                      editor@ijirbse.org
+                    <a href="mailto:editor@ijirbse.com" className="text-blue-600 underline hover:text-blue-800">
+                      editor@ijirbse.com
                     </a>. Submissions undergo an initial editorial screening followed by a <strong>double-blind peer review</strong>.
                   </p>
                 </div>

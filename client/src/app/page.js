@@ -51,7 +51,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
             {/* Left – Cover Image */}
             <img
-              src="/IJIRBSE.jpg"
+              src="/IJIRSE.jpg"
               className="w-50 h-66 object-cover shadow-2xl rounded relative -top-24"
             />
 
@@ -110,7 +110,7 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-6 py-16">
         {/* Your Hero Section */}
         <section className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold mb-6">Welcome to the IJIRBSE</h1>
+          <h1 className="text-5xl font-extrabold mb-6">Welcome to the IJIRSE</h1>
 
           <p className="text-lg max-w-3xl mx-auto mb-10">
             A peer-reviewed open-access journal dedicated to publishing innovative
