@@ -62,11 +62,9 @@ export default function GuideForAuthors() {
                 Authors are invited to submit original research articles, review papers, and
                 short communications that align with the scope of the{" "}
                 <strong className="text-blue-600">
-                  International Journal of Interdisciplinary Research in Basic Sciences and
-                  Engineering (IJIRBSE)
+                  International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)
                 </strong>
-                . Manuscripts must be written in clear English and conform to the following
-                submission guidelines.
+                . All manuscript must be written in clear, concise, and grammatically, accurate English, Submissions are required to fully comply with the journal’s guidelines.
               </p>
             </motion.section>
 
@@ -74,9 +72,10 @@ export default function GuideForAuthors() {
             <Section
               title="1. Types of Manuscripts"
               items={[
-                { label: "Original Research Articles", text: "Full-length papers presenting novel experimental or theoretical results." },
-                { label: "Review Articles", text: "Comprehensive overviews of recent developments in specific fields." },
-                { label: "Short Communications / Technical Notes", text: "Concise reports of new findings or methods." }
+                { label: "Original Research Articles", text: "" },
+                { label: "Review Articles", text: "" },
+                { label: "Short Communications / Technical Notes", text: "" },
+                { label: "Conference proceedings", text: "" },
               ]}
             />
 
@@ -106,11 +105,11 @@ export default function GuideForAuthors() {
                 <li>Abstract — 150–250 words summarizing objectives, methods, results, and conclusions</li>
                 <li>Keywords — 3–6 words reflecting main topics</li>
                 <li>Introduction — Background, rationale, and objectives</li>
-                <li>Materials and Methods — Sufficient detail for replication</li>
-                <li>Results and Discussion — Present and interpret results clearly</li>
+                <li>Materials and Methods </li>
+                <li>Results and Discussion </li>
                 <li>Conclusion — Summarize main findings and future directions</li>
                 <li>Acknowledgments (optional)</li>
-                <li>References — Follow APA, IEEE, or Vancouver style</li>
+                <li>References —  Vancouver style</li>
               </ul>
             </motion.section>
 
@@ -182,12 +181,17 @@ export default function GuideForAuthors() {
             </motion.section>
 
             <Section
-              title="6. Copyright & Licensing"
-              items={[
-                "Upon acceptance, authors must sign a copyright transfer agreement or open-access license (e.g., Creative Commons Attribution (CC BY 4.0)).",
-                "Authors retain the right to use their work with proper citation."
-              ]}
-            />
+  title="6. Copyright & Licensing"
+  items={[
+    "Upon acceptance, authors must sign a copyright transfer agreement or open-access license (e.g., Creative Commons Attribution (CC BY 4.0)).",
+    {
+      label: "Download the Copyright Agreement: ",
+      text: "Copyright Agreement (DOC file)",
+      link: "/copyright-agreement.docx"  // Link to the DOC file in the public folder
+    }
+  ]}
+/>
+
           </>
         )}
       </main>
@@ -206,12 +210,40 @@ function Section({ title, items }) {
       viewport={{ once: true }}
       className="bg-white/80 rounded-3xl shadow p-8 mb-10 border border-gray-100"
     >
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-gray-200 pb-2">{title}</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-gray-800 border-b-2 border-gray-200 pb-2">
+        {title}
+      </h2>
+
       <ul className="list-disc ml-6 space-y-2 text-gray-700">
-        {items.map((item, i) =>
-          typeof item === "string" ? <li key={i}>{item}</li> : <li key={i}><strong>{item.label}:</strong> {item.text}</li>
-        )}
+        {items.map((item, i) => {
+          if (typeof item === "string") return <li key={i}>{item}</li>;
+
+          // If item has a link → render clickable <a>
+          if (item.link) {
+            return (
+              <li key={i}>
+                {item.label && <strong>{item.label}</strong>}
+                <a
+                  href={item.link}
+                  className="text-blue-600 underline hover:text-blue-800"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.text}
+                </a>
+              </li>
+            );
+          }
+
+          // Default object fallback
+          return (
+            <li key={i}>
+              <strong>{item.label}</strong> {item.text}
+            </li>
+          );
+        })}
       </ul>
     </motion.section>
   );
 }
+

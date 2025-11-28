@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "IJIRBSE Journal",
   description:
-    "Official International Journal of Innovative Research in Basic and Social Education",
+    "Official International journal of interdisciplinary Research in Sciences and Engineering",
 };
 
 export default function RootLayout({ children }) {

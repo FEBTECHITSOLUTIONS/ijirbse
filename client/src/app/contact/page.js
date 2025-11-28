@@ -29,7 +29,7 @@ export default function Contact() {
     try {
       setIsSubmitting(true);
 
-      const response = await fetch("http://localhost:3000/api/constactUs", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_APPLICATION_URL}/api/constactUs`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

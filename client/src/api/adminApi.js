@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const BASE_URL = 'https://api.ijirbse.com/api';
-const BASE_URL = 'https://api.ijirbse.com/api';
+// const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = `${process.env.NEXT_PUBLIC_APPLICATION_URL}/api`;
 
 
 // ✅ Create a reusable axios instance

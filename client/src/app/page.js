@@ -58,8 +58,7 @@ export default function Home() {
             {/* Center – Journal Name */}
             <div className="text-white md:flex-1">
               <h1 className="text-4xl font-bold">
-                International Journal of Interdisciplinary Research in Basic
-                Sciences and Engineering
+                International journal of interdisciplinary Research in Sciences and Engineering
               </h1>
               <p className="text-lg opacity-90 mt-2">Supports open access</p>
             </div>

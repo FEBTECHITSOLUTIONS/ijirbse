@@ -89,13 +89,13 @@ export default function Aims() {
         >
           <div className="space-y-6 text-justify text-gray-700 leading-relaxed">
             <p className="text-lg">
-              The <strong className="text-blue-600">International Journal of Interdisciplinary Research in Basic Sciences and Engineering (IJIRBSE)</strong> 
+              The <strong className="text-blue-600">International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)</strong> 
               is devoted to the publication of high-quality original research articles, reviews, and short communications 
-              that advance knowledge in Basic Sciences, Engineering, and their interfaces.
+              that advance knowledge in Sciences, Engineering, and their interfaces.
             </p>
 
             <p className="text-lg">
-              The Journal provides a platform for researchers to explore innovative ideas in Basic Sciences, Engineering, 
+              The Journal provides a platform for researchers to explore innovative ideas in Sciences, Engineering, 
               and Interdisciplinary Research. The following areas reflect, but are not limited to, the scope of the journal. 
               Any topic fitting within the scope of the journal is welcomed for submission.
             </p>

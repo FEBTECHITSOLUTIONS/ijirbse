@@ -45,7 +45,7 @@ export const uploadarticle = async (req, res) => {
       text:articleTitle,
        html: `
         <p>Dear <b>${authorName}</b>,</p>
-        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International Journal of Interdisciplinary Research in Basic Sciences and Engineering (IJIRBSE)</i>.</p>
+        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)</i>.</p>
         <p>Your submission has been received successfully and is currently under editorial review.</p>
         <p>We will notify you about the review outcome within 30–90 days.</p>
         <br/>
@@ -101,7 +101,7 @@ export const updateArticleStatus = async (req, res) => {
       text: articleTitle,
       html: `
         <p>Dear <b>${authorName}</b>,</p>
-        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International Journal of Interdisciplinary Research in Basic Sciences and Engineering (IJIRBSE)</i>.</p>
+        <p>Thank you for submitting your research article titled <b>"${articleTitle}"</b> to the <i>International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)</i>.</p>
         <p>Your submission status has been updated to: <b>${status.replace("_", " ").toUpperCase()}</b>.</p>
         <p>We will keep you informed about further decisions.</p>
         <br/>

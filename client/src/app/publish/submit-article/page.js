@@ -48,7 +48,7 @@ export default function SubmitArticle() {
 
     try {
       setIsSubmitting(true);
-      const response = await fetch("https://api.ijirbse.com/api/uploadarticle", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_APPLICATION_URL}/api/uploadarticle`, {
         method: "POST",
         body: data,
       });

@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Left Section */}
           <div>
             <h3 className="text-lg font-semibold text-blue-700">
-              International Journal of Interdisciplinary Research in Basic Sciences & Engineering (IJIRBSE)
+              International journal of interdisciplinary Research in Sciences and Engineering (IJIRBSE)
             </h3>
             <p className="text-sm text-gray-600 mt-1">
               Advancing knowledge across Science and Engineering disciplines.

@@ -15,7 +15,7 @@ export default function EditorialBoard() {
   useEffect(() => {
     const fetchEditors = async () => {
       try {
-        const res = await fetch(`https://api.ijirbse.com/api/getalluser`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_APPLICATION_URL}/api/getalluser`);
         if (!res.ok) throw new Error("Failed to fetch");
         const json = await res.json();
         const data = json?.data || [];

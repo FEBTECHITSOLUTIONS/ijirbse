@@ -83,7 +83,7 @@ const PublishedArticle = () => {
                     </p>
                      <span className=" text-sm">
                         Link : <a
-                    href={`https://api.ijirbse.com${article.uploadedManuscriptMetaData?.url}`}
+                    href={`http://localhost:5000${article.uploadedManuscriptMetaData?.url}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-600 hover:underline  lowercase"
