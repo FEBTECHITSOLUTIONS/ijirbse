@@ -30,9 +30,9 @@ export default function Navbar() {
           {/* Brand / Logo */}
           <Link
             href="/"
-            className=" font-bold bg-white transition px-3 py-2 rounded-full bams-cop-blur-3xl -translate-x-2.5"
+            className=" font-bold bg-white transition px-3 py-2 rounded-full  -translate-x-2.5"
           >
-            <img src="/journal logo.svg" alt="" />
+            <img src="/journal logo.svg" className=" scale-150" alt="" />
           </Link>
 
           {/* Desktop Menu */}
