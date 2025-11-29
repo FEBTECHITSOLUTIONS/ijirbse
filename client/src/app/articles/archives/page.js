@@ -67,7 +67,7 @@ export default function Archives() {
                        <p className="text-sm text-gray-500">{article.affiliation}</p>
                      )}
                    <span className="text-blue-700 flex items-center gap-1">
-                      <MdLink /> <a className=" " target="_blank" href={`${process.env.NEXT_PUBLIC_APPLICATION_URL}${article.uploadedManuscriptMetaData?.url}`}>Read Article</a>
+                      <MdLink /> <a className=" " target="_blank" href={`${process.env.NEXT_SERVER_BASE_URL}${article.uploadedManuscriptMetaData?.url}`}>Read Article</a>
                    </span>
                      <p className="text-xs text-gray-400 ">
                        Published on {new Date(issue.publishedAt).toLocaleDateString()}

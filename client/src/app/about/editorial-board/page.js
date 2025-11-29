@@ -11,13 +11,13 @@ export default function EditorialBoard() {
   const [error, setError] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("all");
-  const BASE_URL = `${process.env.NEXT_PUBLIC_APPLICATION_URL}/api`;
+  const BASE_URL = `${process.env.NEXT_SERVER_BASE_URL}/api`;
   console.log(BASE_URL);
   
   useEffect(() => {
     const fetchEditors = async () => {
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_APPLICATION_URL}/api/getalluser`);
+        const res = await fetch(`${process.env.NEXT_SERVER_BASE_URL}/api/getalluser`);
         if (!res.ok) throw new Error("Failed to fetch");
         const json = await res.json();
         const data = json?.data || [];
