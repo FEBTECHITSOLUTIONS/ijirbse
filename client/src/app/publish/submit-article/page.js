@@ -48,7 +48,7 @@ export default function SubmitArticle() {
 
     try {
       setIsSubmitting(true);
-      const response = await fetch(`${process.env.NEXT_SERVER_BASE_URL}/api/uploadarticle`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/uploadarticle`, {
         method: "POST",
         body: data,
       });

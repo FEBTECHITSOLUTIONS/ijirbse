@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const BASE_URL = 'http://localhost:5000/api';
-const BASE_URL = `${process.env.NEXT_SERVER_BASE_URL}/api`;
+const BASE_URL = `${process.env.NEXT_PUBLIC_BASE_URL}/api`;
 
 
 // ✅ Create a reusable axios instance
