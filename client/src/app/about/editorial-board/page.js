@@ -11,7 +11,9 @@ export default function EditorialBoard() {
   const [error, setError] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("all");
-
+  const BASE_URL = `${process.env.NEXT_PUBLIC_APPLICATION_URL}/api`;
+  console.log(BASE_URL);
+  
   useEffect(() => {
     const fetchEditors = async () => {
       try {
